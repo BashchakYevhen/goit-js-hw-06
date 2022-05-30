@@ -23,6 +23,7 @@ function createBoxes(amount) {
   boxesEl.append(...numberOfDiv);
 }; 
 
+ 
 
 
 // create.addEventListener("click", createBoxes());
