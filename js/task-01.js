@@ -18,8 +18,12 @@ const arrayCategoryEl = document.querySelectorAll('.item');
 
 console.log('Number of categories:', arrayCategoryEl.length);
 
+arrayCategoryEl.forEach(element => {
+    console.log('Category:', element.firstElementChild.textContent);
+    console.log('Elements:', element.lastElementChild.length);
 
-for (let i = 0; i < arrayCategoryEl.length; i += 1) {
-    console.log('Category:', arrayCategoryEl[i].querySelector('h2').textContent);
-    console.log('Elements:', arrayCategoryEl[i].querySelectorAll('li').length);
-}
+});
+// for (let i = 0; i < arrayCategoryEl.length; i += 1) {
+//     console.log('Category:', arrayCategoryEl[i].querySelector('h2').textContent);
+//     console.log('Elements:', arrayCategoryEl[i].querySelectorAll('li').length);
+// }
